@@ -6,7 +6,7 @@ function are_cookies_enabled()
 	console.log('cookieEnabled value: ' + cookieEnabled);
 	console.log('isNavCookieEnabled undefined? -> ' + isNavCookieEnabledUndefined);
 
-	if (isNavCookieEnabledUndefined && !cookieEnabled)
+	if (isNavCookieEnabledUndefined || !cookieEnabled)
 	{ 
 		console.log('nav cookie undefined and cookie disabled... trying to write garbage cookie.');
 		document.cookie="testcookie";
