@@ -1,4 +1,3 @@
-// http://sveinbjorn.org/cookiecheck
 function are_cookies_enabled()
 {
 	var cookieEnabled = (navigator.cookieEnabled) ? true : false;
